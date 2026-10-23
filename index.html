@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Tooth Model</title>
+
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    model-viewer {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      --poster-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="./tooth%203d%20model_Clone1.glb"
+    alt="Interactive 3D tooth model"
+    camera-controls
+    disable-zoom
+    interaction-prompt="none"
+    shadow-intensity="1"
+    exposure="1">
+  </model-viewer>
+</body>
+</html>
